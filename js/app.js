@@ -1,13 +1,15 @@
+//TARJETA DE CREDITO VALIDA
 do {
-  var creditCard = parseInt(prompt('Ingrese su numero de tarjeta'));
-} while(!creditCard);
+  var creditCard = (prompt('Ingrese su numero de tarjeta'));
+} while(!creditCard);//pedir prompt hasta que ingrese el numero
 
-console.log(creditCard);
+var cardNumber= Array.from (creditCard);
+cardNumber.reverse();
 
- function isValidCard(creditCard){
+ function isValidCard(cardNumber){
 
-   var cardNumber= 0;
-   for (var i=0; i < creditCard.length; i++){
+   var counter= parseInt(cardNumber[i]);
+   for (var i=0; i < cardNumber.length; i++){
     cardNumber.push([i]);
    }
 
